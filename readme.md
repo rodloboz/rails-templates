@@ -1,3 +1,5 @@
+These templates are based on [Le Wagon's Rails Templates](https://github.com/lewagon/rails-templates)
+
 # Rails Templates
 
 Quickly generate a rails app using a rails boilerplate
