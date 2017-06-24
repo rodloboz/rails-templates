@@ -203,7 +203,7 @@ class ApplicationController < ActionController::Base
 end
 RUBY
 
-  # migrate + devise views
+  # Migration + Devise Views
   ########################################
   rake 'db:migrate'
   generate('devise:views')
@@ -213,6 +213,10 @@ RUBY
   run 'curl -L https://raw.githubusercontent.com/rodloboz/rails-templates/master/devise-views/edit_registration.html.erb > app/views/devise/registrations/edit.html.erb'
   run 'curl -L https://raw.githubusercontent.com/rodloboz/rails-templates/master/devise-views/new_password.html.erb > app/views/devise/passwords/new.html.erb'
 
+  # Application Helper
+  ########################################
+
+  run 'curl -L https://raw.githubusercontent.com/rodloboz/rails-templates/master/helpers/application_helper.rb > app/helpers/application_helper.rb'
 
   # Pages Controller
   ########################################
