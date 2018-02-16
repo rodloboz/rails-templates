@@ -5,7 +5,7 @@ run 'pgrep spring | xargs kill -9'
 run 'rm Gemfile'
 file 'Gemfile', <<-RUBY
 source 'https://rubygems.org'
-ruby '#{RUBY_VERSION}'
+# ruby '#{RUBY_VERSION}'
 gem 'devise'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
