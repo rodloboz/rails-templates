@@ -53,9 +53,6 @@ TXT
 # Assets
 ########################################
 run 'rm -rf app/assets'
-run 'mv app/javascripts frontend'
-gsub_file('config/webpacker.yml', 'source_path: app/javascript', 'source_path: frontend')
-
 
 # Packages
 ########################################
@@ -273,8 +270,11 @@ RUBY
 
   # Webpacker / Yarn
   ########################################
-  run 'rm app/javascript/packs/application.js'
-  file 'app/javascript/packs/application.js', <<-JS
+  run 'mv app/javascripts frontend'
+  gsub_file('config/webpacker.yml', 'source_path: app/javascript', 'source_path: frontend')
+
+  run 'rm frontend/packs/application.js'
+  file 'frontend/packs/application.js', <<-JS
 import "init";
 JS
 
