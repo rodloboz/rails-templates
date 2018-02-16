@@ -293,8 +293,6 @@ body {
 }
   HTML
 
-  end
-
   # Figaro
   ########################################
   run 'bundle binstubs figaro'

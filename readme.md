@@ -24,7 +24,7 @@ Get a boilerplate rails 5.1 app ready to be deployed on Heroku with Webpacker, d
 
 ```bash
 rails new \
-  --skip-coffee --skip-sprockets --skip-turbolinks --webpack - \
+  --skip-coffee --skip-sprockets --skip-turbolinks --webpack \
   -T --database postgresql \
   -m https://raw.githubusercontent.com/rodloboz/rails-templates/master/react-devise.rb \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
