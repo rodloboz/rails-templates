@@ -16,3 +16,16 @@ rails new \
   -m https://raw.githubusercontent.com/rodloboz/rails-templates/master/devise.rb \
   CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
 ```
+
+
+## React Devise
+
+Get a boilerplate rails 5.1 app ready to be deployed on Heroku with Webpacker, debugging gems and a Devise install with a genrated `User` model with an `avatar` attribute and without assets pipeline.
+
+```bash
+rails new \
+  --skip-coffee --skip-sprockets --skip-turbolinks --webpack - \
+  -T --database postgresql \
+  -m https://raw.githubusercontent.com/rodloboz/rails-templates/master/react-devise.rb \
+  CHANGE_THIS_TO_YOUR_RAILS_APP_NAME
+```

@@ -136,6 +136,10 @@ run 'curl -L https://raw.githubusercontent.com/rodloboz/rails-templates/master/d
 
 # README
 ########################################
+markdown_file_content = <<-MARKDOWN
+Rails app generated with [rodloboz/rails-templates](https://github.com/rodloboz/rails-templates).
+MARKDOWN
+file 'README.md', markdown_file_content, force: true
 
 # Generators
 ########################################
